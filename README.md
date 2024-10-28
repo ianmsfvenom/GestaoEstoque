@@ -10,7 +10,7 @@ Foi feito utilizando a IDE Eclipse e uma JDK 21 modificada com o JavaFX incluso 
 
 - 1 - Rode um servidor MySQL em sua máquina seja por `xampp` ou `laragon` e rode os arquivos SQL dentro da pasta `sql/` no banco de dados.
 
-- 2 - Abra a IDE de preferência e importe o projeto e em seguida a JDK modificada junto com o MySQL connector.
+- 2 - Abra a IDE de preferência e importe o projeto e em seguida a [JDK modificada](https://www.azul.com/downloads/?version=java-21-lts&os=windows&package=jdk-fx#zulu) junto com o [MySQL connector](https://downloads.mysql.com/archives/c-j/). 
 
 - 3 - Coloque as configurações do banco como host, porta... No arquivo `config/DatabaseConfig.java`.
 
