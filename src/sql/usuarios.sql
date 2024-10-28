@@ -1,0 +1,8 @@
+CREATE TABLE usuarios(
+	id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL UNIQUE,
+    papel VARCHAR(50) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+
+INSERT INTO `usuarios` VALUES (4,'admin','Administrador','9pp72eRJMPejHyn0AFHPxvDSrNvJd5m8VRL27Iz+GF4=');

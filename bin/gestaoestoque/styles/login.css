@@ -1,0 +1,32 @@
+.login-container {
+	-fx-background-image: url("/gestaoestoque/images/background-login.jpg");
+}
+
+.login-card {
+	-fx-background-color: #efefef;
+	-fx-background-radius: 15px;
+}
+
+.button-login {
+	-fx-background-color: #00b6ff;
+	-fx-background-radius: 5px;
+	-fx-text-fill: white;
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+}
+
+.button-leave {
+	-fx-background-color: #ff4848;
+	-fx-background-radius: 5px;
+	-fx-text-fill: white;
+	-fx-font-size: 14px;
+	-fx-font-weight: bold;
+}
+
+.login-field {
+	-fx-background-color: white;
+	-fx-border-width: 1px;
+	-fx-border-color: #00b6ff;
+	-fx-border-radius: 10px;
+	-fx-background-radius: 10px;
+}

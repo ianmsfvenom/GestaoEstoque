@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="relatorioPane" prefHeight="724.0" prefWidth="655.0" stylesheets="/gestaoestoque/styles/Painel.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaoestoque.controller.relatorio.RelatorioController">
+   <children>
+      <Label layoutX="28.0" layoutY="28.0" prefHeight="48.0" prefWidth="600.0" text="Relatórios e Análises">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <VBox layoutX="28.0" layoutY="82.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produto mais vendido:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="maisVendidoLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produto Classe A:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="classeALabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produto Classe B:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="classeBLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produto Classe C:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="classeCLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produtos de baixa rotatividade:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="baixaRotatividadeLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Produtos de alta rotatividade:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="altaRotatividadeLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="Margem de lucro:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lucroLabel" layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

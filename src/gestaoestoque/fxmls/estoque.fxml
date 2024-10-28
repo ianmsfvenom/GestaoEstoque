@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="estoquePane" prefHeight="724.0" prefWidth="655.0" stylesheets="/gestaoestoque/styles/Painel.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaoestoque.controller.estoque.EstoqueController">
+   <children>
+      <Label layoutX="27.0" layoutY="21.0" prefHeight="48.0" prefWidth="600.0" text="Nível de Estoque">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="estoqueTabela" layoutX="23.0" layoutY="217.0" prefHeight="488.0" prefWidth="608.0">
+         <columns>
+            <TableColumn fx:id="produtoColuna" prefWidth="151.99993896484375" text="Produto" />
+            <TableColumn fx:id="quantidadeColuna" minWidth="0.0" prefWidth="97.60003662109375" text="Quantidade" />
+            <TableColumn fx:id="maximoColuna" prefWidth="77.60000610351562" text="Max" />
+            <TableColumn fx:id="minimoColuna" prefWidth="65.60003662109375" text="Min" />
+            <TableColumn fx:id="reposicaoColuna" prefWidth="125.60003662109375" text="Ponto de reposição" />
+            <TableColumn fx:id="statusColuna" prefWidth="85.60003662109375" text="Status" />
+         </columns>
+      </TableView>
+      <HBox fx:id="box1" layoutX="27.0" layoutY="69.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="184.0">
+               <children>
+                  <Label text="Produto:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="produtoEscolha" maxWidth="1.7976931348623157E308" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="47.0" prefWidth="184.0">
+               <children>
+                  <Label text="Quantidade:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="quantidadeSpinner" editable="true" maxWidth="1.7976931348623157E308" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="47.0" prefWidth="184.0">
+               <children>
+                  <Label text="Quantidade mínima:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="minimaSpinner" editable="true" maxWidth="1.7976931348623157E308" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox fx:id="box2" layoutX="27.0" layoutY="137.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="184.0">
+               <children>
+                  <Label text="Quantidade maxima:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="maximaSpinner" editable="true" maxWidth="1.7976931348623157E308" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="47.0" prefWidth="184.0">
+               <children>
+                  <Label text="Ponto de reposicao:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="reposicaoSpinner" editable="true" maxWidth="1.7976931348623157E308" />
+               </children>
+            </VBox>
+            <Button fx:id="cadastrarEstoqueButton" mnemonicParsing="false" onAction="#onClickEstoqueButton" prefHeight="54.0" prefWidth="185.0" styleClass="primary-button" text="Cadastrar estoque" textAlignment="CENTER" wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

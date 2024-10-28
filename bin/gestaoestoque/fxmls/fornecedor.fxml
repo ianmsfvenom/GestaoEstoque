@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="fornecedorPane" prefHeight="724.0" prefWidth="655.0" stylesheets="/gestaoestoque/styles/Painel.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaoestoque.controller.fornecedor.FornecedorController">
+   <children>
+      <Label layoutX="28.0" layoutY="14.0" prefHeight="48.0" prefWidth="600.0" text="Fornecedores">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <HBox fx:id="box1" layoutX="28.0" layoutY="83.0" prefWidth="600.0" spacing="20.0">
+         <children>
+            <VBox prefHeight="47.0" prefWidth="219.0">
+               <children>
+                  <Label text="Nome completo:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nomeFornecedorField" promptText="Nome" styleClass="text-field-1" />
+               </children>
+            </VBox>
+            <VBox prefHeight="47.0" prefWidth="181.0">
+               <children>
+                  <Label text="Telefone de contato:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="telFornecedorField" promptText="Telefone" styleClass="text-field-1" />
+               </children>
+            </VBox>
+            <VBox prefHeight="47.0" prefWidth="163.0">
+               <children>
+                  <Label text="Condicoes de pagamento:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="condicaoPagamentoFornecedor" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Button fx:id="addFornecedorButton" layoutX="467.0" layoutY="145.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="161.0" styleClass="primary-button" text="Cadastrar Fornecedor">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="fornecedoresTable" layoutX="28.0" layoutY="219.0" prefHeight="473.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="nomeFornecedoresColuna" prefWidth="209.0" text="Nome" />
+            <TableColumn fx:id="telFornecedoresColuna" prefWidth="199.0" text="Telefone" />
+            <TableColumn fx:id="cpFornecedoresColuna" prefWidth="191.0" text="Condicao de Pagamento" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

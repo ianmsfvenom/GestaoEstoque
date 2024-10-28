@@ -1,0 +1,41 @@
+.side-bar {
+	-fx-background-color: #00b2ff;
+}
+
+.button-side-bar {
+	-fx-background-color: transparent;
+	-fx-text-alignment: left;
+}
+
+.button-side-bar:hover {
+	-fx-background-color: #009bde;
+}
+
+.text-field-1 {
+	-fx-background-radius: 5px;
+	-fx-background-background: #e8e8e8;
+	-fx-border-width: 1px;
+	-fx-border-color: #00b2ff;
+	-fx-border-radius: 5px;
+}
+
+.primary-button {
+	-fx-background-color: #00b2ff;
+	-fx-background-radius: 5px;
+	-fx-text-fill: white;
+	-fx-font-weight: bold;
+}
+
+.card-entrace-product {
+	-fx-background-radius: 5px;
+	-fx-border-radius: 5px;
+}
+
+.button-side-bar-logout {
+	-fx-background-color: transparent;
+	-fx-text-alignment: left;
+}
+
+.button-side-bar-logout:hover {
+	-fx-background-color: #ff5454;
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="compraVendaPane" prefHeight="724.0" prefWidth="655.0" stylesheets="/gestaoestoque/styles/Painel.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestaoestoque.controller.compra_venda.CompraVendaController">
+   <children>
+      <Label layoutX="28.0" layoutY="36.0" prefHeight="48.0" prefWidth="600.0" text="Compras e Vendas">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <TableView fx:id="compraVendaTable" layoutX="28.0" layoutY="231.0" prefHeight="445.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="produtoColuna" prefWidth="181.0" text="Produto" />
+            <TableColumn fx:id="quantidadeColuna" prefWidth="100.0" text="Quantidade" />
+            <TableColumn fx:id="precoColuna" prefWidth="97.0" text="Preco unitario" />
+            <TableColumn fx:id="totalColuna" prefWidth="102.0" text="Valor total" />
+            <TableColumn fx:id="tipoColuna" prefWidth="119.0" text="Tipo" />
+         </columns>
+      </TableView>
+      <HBox layoutX="28.0" layoutY="84.0" prefHeight="121.0" prefWidth="599.0" spacing="30.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="142.0" prefWidth="215.0" style="-fx-background-color: #0042ff;" styleClass="card-entrace-product">
+               <children>
+                  <Label text="Compras" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="comprasLabel" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="142.0" prefWidth="215.0" style="-fx-background-color: #9700ff;" styleClass="card-entrace-product">
+               <children>
+                  <Label text="Vendas" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="vendasLabel" text="0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
